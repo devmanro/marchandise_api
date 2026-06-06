@@ -11,8 +11,8 @@ from dictionary_rules import apply_dictionary
 app = FastAPI()
 
 MODEL_PATH = "marchandise_model.pkl"
-FILE_ID = "https://drive.google.com/file/d/1SU532bppGcmOCX_SJnsZgdKmx3jzuwCI/view?usp=drivesdk"
 
+FILE_ID = "1SU532bppGcmOCX_SJnsZgdKmx3jzuwCI"  
 def download_model():
     if not os.path.exists(MODEL_PATH):
         print("📥 Downloading model from Google Drive...")
